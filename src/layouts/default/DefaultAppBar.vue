@@ -19,13 +19,38 @@
     ></v-btn>
     <v-btn icon="mdi-information-outline" @click="handleDialogState"></v-btn>
     <v-dialog v-model="dialog" width="512">
-      <v-card title="Disclaimer" prepend-icon="mdi-information-outline">
+      <v-card title="Information" prepend-icon="mdi-information-outline">
         <v-card-text>
+          <strong>Disclaimer:</strong>
           I want to clarify that I do not assert any ownership of the wallpapers
           featured in this repository. The majority of these wallpapers were
           discovered on platforms such as Reddit. If you happen to identify any
           images in this repository that belong to you and have limited utility
-          here, please inform me, and I will promptly remove them.
+          here, please
+          <v-btn
+            variant="outlined"
+            size="small"
+            href="https://ahmosys.is-a.dev/#contact"
+            target="_blank"
+            >inform me</v-btn
+          >
+          and I will promptly remove them.
+        </v-card-text>
+        <v-divider></v-divider>
+        <v-card-text>
+          <strong>Credits / Inspiration:</strong>
+          I'd like to thank
+          <v-btn
+            variant="outlined"
+            size="small"
+            href="https://github.com/DenverCoder1/Minimalistic-Wallpaper-Collection"
+            target="_blank"
+            >DenverCoder1</v-btn
+          >
+          for their profound influence on Nordpapers' creation. Their work was
+          instrumental in shaping this project. While our applications may
+          differ in technology and purpose, DenverCoder1 has been a valuable
+          source of ideas and inspiration for Nordpapers.
         </v-card-text>
         <v-card-actions>
           <v-btn variant="tonal" block @click="handleDialogState">Close</v-btn>
