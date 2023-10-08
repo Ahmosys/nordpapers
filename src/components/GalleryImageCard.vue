@@ -10,9 +10,9 @@
       :aspect-ratio="16 / 9"
       :lazy-src="getImageProxyUrl(image.download_url, 'min')"
       cover
-      v-bind="props"
+      :v-bind="props"
     >
-      <template v-slot:placeholder>
+      <template #placeholder>
         <v-row class="fill-height ma-0" align="center" justify="center">
           <v-progress-circular
             indeterminate
@@ -20,12 +20,12 @@
           ></v-progress-circular>
         </v-row>
       </template>
-      <template v-slot:error>
+      <template #error>
         <v-img
           :src="image.download_url"
           :aspect-ratio="16 / 9"
           cover
-          v-bind="props"
+          :v-bind="props"
         ></v-img>
       </template>
       <v-tooltip activator="parent" location="top"
@@ -45,7 +45,12 @@ const IMG_PROXY_URLS = {
   min: "https://dc1imgproxy.fly.dev/x/rs:auto:10:6:1/plain/",
 };
 
-const props = defineProps(["image"]);
+const props = defineProps({
+  image: {
+    type: Object,
+    required: true,
+  },
+});
 const imageResolution = ref({
   height: "",
   width: "",
