@@ -4,7 +4,7 @@
 
 **Nordpapers** is your ultimate destination for a curated collection of wallpapers inspired by the soothing Nord color palettes.
 
-![Nordpapers Screenshot](https://i.ibb.co/nDmXp3D/pawelzmarlak-2024-07-14-T15-26-04-789-Z.png)
+![Nordpapers Screenshot](docs\images\readme-presentation.png)
 
 ## Overview
 
