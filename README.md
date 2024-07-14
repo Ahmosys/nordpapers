@@ -1,4 +1,4 @@
-# 🖼️ Nordpapers
+# 🌌 Nordpapers
 
 [![Vercel](https://vercelbadge.vercel.app/api/ahmosys/nordpapers)](https://nordpapers.vercel.app) ![GitHub last commit](https://img.shields.io/github/last-commit/ahmosys/nordpapers) ![GitHub issues](https://img.shields.io/github/issues/ahmosys/nordpapers)
 
