@@ -1,7 +1,7 @@
 <template>
   <v-footer class="text-center d-flex flex-column mt-5">
     <div>
-      <v-btn class="mx-4" icon="mdi-github" variant="text"></v-btn>
+      <v-btn class="mx-4" icon="mdi-github" variant="text" href="https://github.com/Ahmosys/nordpapers/" target="_bank"></v-btn>
     </div>
     <div class="pt-0">
       The images have not been created by me, they have mainly been gathered

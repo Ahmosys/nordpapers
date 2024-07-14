@@ -72,9 +72,10 @@ const theme = useTheme();
  * It toggles between "customLightNordTheme" and "customDarkNordTheme".
  */
 function handleThemeState() {
-  theme.global.name.value = theme.global.current.value.dark
-    ? "customLightNordTheme"
-    : "customDarkNordTheme";
+  const newTheme = theme.global.current.value.dark ? 'customLightNordTheme' : 'customDarkNordTheme';
+  theme.global.name.value = newTheme;
+
+  localStorage.setItem('userTheme', newTheme);
 }
 
 /**

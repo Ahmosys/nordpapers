@@ -49,10 +49,15 @@ const customLightNordTheme = {
   },
 }
 
+function getSavedTheme() {
+  const savedTheme = localStorage.getItem('userTheme');
+  return savedTheme || 'customDarkNordTheme'; // Thème par défaut si aucun n'a été enregistré
+}
+
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
   theme: {
-    defaultTheme: 'customDarkNordTheme',
+    defaultTheme: getSavedTheme(),
     themes: {
       customDarkNordTheme,
       customLightNordTheme,
