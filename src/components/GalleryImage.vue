@@ -21,8 +21,12 @@ import { onMounted, ref } from "vue";
 import GalleryImageCard from "@/components/GalleryImageCard.vue";
 
 const REPOSITORY = "ahmosys/nordpapers";
+const REPOSITORY_LINUXDOTEXE = "linuxdotexe/nordic-wallpapers";
+
 const IMAGES_DIRECTORY = "public/images";
-const GITHUB_API_URL = `https://api.github.com/repos/${REPOSITORY}/contents/${IMAGES_DIRECTORY}`;
+const IMAGES_DIRECTORY_LINUXDOTEXE = "wallpapers";
+
+const GITHUB_API_URL = `https://api.github.com/repos/${REPOSITORY_LINUXDOTEXE}/contents/${IMAGES_DIRECTORY_LINUXDOTEXE}`;
 
 const images = ref([]);
 
